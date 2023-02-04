@@ -1,25 +1,38 @@
-<!DOCTYPE html>
 
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
-<html>
+{% block title_block %}
+    About Rango
+{% endblock %}
 
-    <head>
-<!--        <meta charset="UTF-8">-->
-        <title>Rango</title>
-    </head>
+{% block body_block %}
+    <h1>Rango says...</h1>
+    here is the about page.<br />
+    <strong>This tutorial has been put together by Ella.</strong>
+    <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." />
 
-    <body>
-        <h1>Rango says...</h1>
-        <div>
-            here is the about page.<br />
-            <strong>This tutorial has been put together by Ella.</strong><br />
-            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." />
-        </div>
-        <div>
-            <a href="/rango/">Index</a><br />
-            <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
-        </div>
-    </body>
+    <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+{% endblock %}
 
-</html>
+<!--<html>-->
+
+<!--    <head>-->
+<!--&lt;!&ndash;        <meta charset="UTF-8">&ndash;&gt;-->
+<!--        <title>Rango</title>-->
+<!--    </head>-->
+
+<!--    <body>-->
+<!--        <h1>Rango says...</h1>-->
+<!--        <div>-->
+<!--            here is the about page.<br />-->
+<!--            <strong>This tutorial has been put together by Ella.</strong><br />-->
+<!--            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." />-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <a href="/rango/">Index</a><br />-->
+<!--            <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />-->
+<!--        </div>-->
+<!--    </body>-->
+
+<!--</html>-->
